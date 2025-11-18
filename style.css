@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
  
 }
+
 .page1 {
   height: 100vh;
   width: 100%;
@@ -43,8 +44,6 @@
   color: orangered;
 }
 
-
-
 .btn{
   position: absolute;
   left: 85%;
@@ -80,15 +79,23 @@
  font-weight: 300;
  line-height: 80%;
 }
+#prot h2{
+   font-size: 85px; 
+     position: absolute;
+    left: 11.4%; 
+    top: 42%; 
+    color:  orangered;
+    font-weight: 700;
+}
 #prot h3{
   position: absolute;
   left: 11.5%;
-  top:46%;
+  top:56%;
 }
 .hire .me{
    position: absolute;
   left: 11.5%;
-  top:54%;
+  top:69%;
   background-color: orangered;
   color: white;
   width: 9vw;
@@ -99,7 +106,7 @@
 .hire .msg{
    position: absolute;
   left: 22%;
-  top:54%;
+  top:69%;
   background-color: orangered;
   width: 9vw;
   height: 7vh;
@@ -159,20 +166,22 @@ position: absolute;
   height: 12vh;
 }
 
-.social-links {
+.social-link {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 30px;
+  position: absolute;
+  top: 63%;
+  left: 12%;
 }
 
-.social-links a {
+.social-link a {
   color: white;
   font-size: 30px;
   transition: all 0.3s ease;
 }
 
-.social-links a:hover {
+.social-link a:hover {
   color: orangered;
   transform: scale(1.2);
 }
@@ -182,40 +191,56 @@ position: absolute;
    position: absolute;
    left: -27%;
    font-size: 20px;
-
    top: 1%;
   }
   .nav ul{
     display: none;
   }
   .btn{
-    width: 20vw;
-    margin-left:-60px ;
-    height: 4.5vh;
+    width: 25vw; 
+    margin-left: -60px;
+    height: 5vh; 
+    font-size: 14px; 
   }
   #prot p{
-    margin-top: -10px;
+    font-size: 28px; 
+    left: 7%; 
+    top: 22%; 
   }
   #prot h1{
-    font-size: 60px;
-    margin-top: -20px;
+    font-size: 80px; 
+    left: 5%; 
+    top: 26%; 
+    line-height: 1.1; 
+  }
+  #prot h2{
+     font-size: 85px; 
+     position: absolute;
+    left: 5%; 
+    top: 34%; 
+    color:  orangered;
+    font-weight: 700;
   }
   #prot h3{
-    margin-top: 15px;
-    font-size: 18px;
+    font-size: 18px; 
+    left: 5.5%; 
+    top: 45.5%; 
   }
   .hire .me{
-    width: 25vw;
-    height: 6.2vh;
-    border-radius: 20px;
-    margin-top: 20px;
+    width: 30vw; 
+    height: 6vh;
+    border-radius: 25px; 
+    left: 5%; 
+    top: 57%; 
+    font-size: 14px; 
   }
   .hire .msg{
+    width: 30vw; 
     height: 6vh;
-    width: 25vw;
-    margin-left: 60px;
-    border-radius: 20px;
-    margin-top: 20px;
+    border-radius: 25px; 
+    left: 40%;
+    top: 57%; 
+    font-size: 14px; 
   }
   .circle{
     position: absolute;
@@ -234,44 +259,53 @@ position: absolute;
     width: 60vw;
     position: absolute;
     top: 65%;
-    left: 25%;
+    left: 22.5%;
     z-index: 1;
   }
   .img1{
-  width: 12vw;
-height: 55px;
+  width: 13vw;
+height: 75px;
     position: absolute;
-    left: 10%;
- top: 80%;
+    left: 8%;
+ top: 83%;
   }
   .img2{
-width: 20vw;
-height: 50px;
+width: 25vw;
+height: 62px;
  position: absolute;
  left: 65%;
- top: 75%;
+ top: 73%;
   }
  .img3{
 width: 35vw;
-height: 170px;
+height: 150px;
  position: absolute;
- left: 16%;
- top: 64%;
+ left: 10%;
+ top: 66%;
  z-index: 1;
  }
  .img4{
-width: 15vw;
+width: 13.5vw;
 height: 50px;
  position: absolute;
- left: 80%;
- top: 79%;
+ left: 83%;
+ top: 84%;
  }
+  .social-link {
+    gap: 20px; 
+    top: 52%; 
+    left: 8%; 
+  }
+  .social-link a {
+    font-size: 24px; 
+  }
 }
-#page2{
+#page2 {
   height: 100vh;
   width: 100%;
-    background: radial-gradient(circle at top ,#140f09,#aa4512);
+  background: radial-gradient(circle at top, #140f09, #aa4512);
 }
+
 #about {
   width: 100%;
   min-height: 100vh;
@@ -292,12 +326,18 @@ height: 50px;
   gap: 50px;
 }
 
-
-.about-img {
-  margin-top: -100px;
+.about-img .img{
+  margin-top: -80px;
+  height: 60vh;
+  width: 25vw;
 }
 
-
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  width: 200px; 
+  height: 200px;
+}
 
 .about-content {
   flex: 1;
@@ -310,7 +350,7 @@ height: 50px;
 }
 
 .about-content .intro {
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
   line-height: 1.8;
   margin-bottom: 20px;
   opacity: 0.9;
@@ -323,7 +363,6 @@ height: 50px;
   opacity: 0.85;
 }
 
-
 .about-tags {
   margin-top: 30px;
   display: flex;
@@ -335,7 +374,7 @@ height: 50px;
   border: 1px solid white;
   padding: 10px 20px;
   border-radius: 30px;
-  font-size: 0.9rem;
+  font-size: 0.9rem; 
   display: flex;
   align-items: center;
   gap: 8px;
@@ -353,34 +392,82 @@ height: 50px;
   .about-container {
     flex-direction: column;
     text-align: center;
-   
   }
 
-
-  .about-img img {
+  .about-img .img {
     width: 150px;
     height: 150px;
-    margin-top: 20px;
+    margin-top: -20px;
   }
-.about-content h1{
-  font-size: 20px;
-  margin-top: -40px;
-}
+
+  .about-content h1 {
+    font-size: 2.5rem; 
+    margin-top: -40px;
+  }
+
   .about-content .intro {
-    font-size: 10px;
+    font-size: 1.1rem; 
     margin-top: -10px;
   }
-  .about-content  .details {
-    font-size: 10px;
+
+  .about-content .details {
+    font-size: 1rem; 
     margin-top: 0px;
   }
 
-  .about-tags{
+  .about-tags {
     width: auto;
     margin-left: -10px;
-
-    }
+  }
 }
+
+
+@media (max-width: 600px) {
+  #about {
+    padding: 50px 5%; 
+  }
+
+  .about-container {
+    gap: 30px; 
+  }
+
+  .about-img img {
+    width: 120px; 
+    height: 120px;
+    margin-top: 10px; 
+  }
+
+  .about-content h1 {
+    font-size: 1.75rem; 
+    margin-top: -20px; 
+    margin-bottom: 15px;
+  }
+
+  .about-content .intro {
+    font-size: 1.25rem;
+    margin-top: 0px;
+    line-height: 1.6; 
+  }
+
+  .about-content .details {
+    font-size: 1.1rem;
+    margin-top: 10px; 
+    line-height: 1.5;
+  }
+
+  .about-tags {
+    margin-top: 20px;
+    justify-content: center;
+    gap: 10px; 
+  }
+
+  .about-tags span {
+    padding: 8px 15px; 
+    font-size: 0.85rem; 
+  }
+}
+
+
 
 #projects {
   width: 100%;
