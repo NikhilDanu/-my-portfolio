@@ -300,172 +300,157 @@ height: 50px;
     font-size: 24px; 
   }
 }
-#page2 {
+
+#page2{
   height: 100vh;
   width: 100%;
-  background: radial-gradient(circle at top, #140f09, #aa4512);
+  background: radial-gradient(circle at top ,#140f09,#aa4512);
 }
-
 #about {
-  width: 100%;
-  min-height: 100vh;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 10%;
+  padding: 80px 8%;
 }
 
 .about-container {
   display: flex;
-  flex-wrap: wrap;
+  gap: 60px;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
   max-width: 1200px;
-  gap: 50px;
 }
 
-.about-img .img{
-  margin-top: -80px;
-  height: 60vh;
-  width: 25vw;
-}
-
-.about-img img {
-  max-width: 100%;
+.about-img .img {
+  width: 260px;
   height: auto;
-  width: 200px; 
-  height: 200px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  position: absolute;
+  left:10px;
+  top: 140%;
 }
+
 
 .about-content {
   flex: 1;
+  min-width: 300px;
   max-width: 550px;
 }
 
 .about-content h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .about-content .intro {
-  font-size: 1.2rem; 
-  line-height: 1.8;
-  margin-bottom: 20px;
-  opacity: 0.9;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
 }
 
 .about-content .details {
   font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 15px;
-  opacity: 0.85;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 12px;
 }
 
+/* TAG FIX */
 .about-tags {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
 }
 
 .about-tags span {
   border: 1px solid white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 0.9rem; 
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 0.9rem;
   transition: 0.3s;
 }
 
 .about-tags span:hover {
-  color: orangered;
   border-color: orangered;
+  color: orangered;
   transform: translateY(-4px);
 }
 
 
+/* -------------- TABLET FIX -------------- */
+
 @media (max-width: 900px) {
+  #about {
+    padding: 60px 6%;
+  }
+
   .about-container {
     flex-direction: column;
     text-align: center;
-  }
-
-  .about-img .img {
-    width: 150px;
-    height: 150px;
-    margin-top: -20px;
-  }
-
-  .about-content h1 {
-    font-size: 2.5rem; 
-    margin-top: -40px;
-  }
-
-  .about-content .intro {
-    font-size: 1.1rem; 
-    margin-top: -10px;
-  }
-
-  .about-content .details {
-    font-size: 1rem; 
-    margin-top: 0px;
-  }
-
-  .about-tags {
-    width: auto;
-    margin-left: -10px;
-  }
-}
-
-
-@media (max-width: 600px) {
-  #about {
-    padding: 50px 5%; 
-  }
-
-  .about-container {
-    gap: 30px; 
+    gap: 40px;
   }
 
   .about-img img {
-    width: 120px; 
-    height: 120px;
-    margin-top: 10px; 
+    width: 220px;
   }
 
   .about-content h1 {
-    font-size: 1.75rem; 
-    margin-top: -20px; 
-    margin-bottom: 15px;
+    font-size: 2.5rem;
   }
 
   .about-content .intro {
-    font-size: 1.25rem;
-    margin-top: 0px;
-    line-height: 1.6; 
+    font-size: 1.1rem;
   }
 
   .about-content .details {
-    font-size: 1.1rem;
-    margin-top: 10px; 
-    line-height: 1.5;
+    font-size: 1rem;
   }
 
   .about-tags {
-    margin-top: 20px;
     justify-content: center;
-    gap: 10px; 
+  }
+}
+
+
+/* -------------- MOBILE FIX -------------- */
+
+@media (max-width: 600px) {
+  #about {
+    padding: 40px 5%;
+  }
+
+  .about-img img {
+    width: 150px;
+  }
+
+  .about-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+
+  .about-content .intro {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about-content .details {
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
   .about-tags span {
-    padding: 8px 15px; 
-    font-size: 0.85rem; 
+    padding: 8px 14px;
+    font-size: 0.8rem;
   }
 }
+
+/* ---------------- ABOUT SECTION FIX END ---------------- */
+
 
 
 
@@ -501,7 +486,7 @@ height: 50px;
   position: absolute;
   width: 3px;
   background-color: orangered;
-  top: 0;
+  top: 50px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
