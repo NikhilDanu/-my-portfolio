@@ -301,46 +301,42 @@ height: 50px;
   }
 }
 
-#page2{
+#page2 {
   height: 100vh;
   width: 100%;
-  background: radial-gradient(circle at top ,#140f09,#aa4512);
+  background: radial-gradient(circle at top, #140f09, #aa4512);
 }
+
+/* ABOUT SECTION */
 #about {
   color: white;
+  padding: 80px 8%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 80px 8%;
 }
 
 .about-container {
   display: flex;
-  gap: 60px;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
   max-width: 1200px;
 }
 
-.about-img .img {
-  width: 260px;
-  height: auto;
-  border-radius: 20px;
-  display: block;
-  margin: auto;
-  position: absolute;
-  left:10px;
-  top: 140%;
+/* 🟩 FIXED: Absolute hataya, normal flow me rakha */
+.about-img img {
+  width: 300px;
+  border-radius: 10px;
 }
 
-
+/* 🟩 FIXED: Width flexible, no absolute, no huge margin */
 .about-content {
   flex: 1;
-  min-width: 300px;
-  max-width: 550px;
+  min-width: 280px;
 }
 
+/* TEXT STYLING */
 .about-content h1 {
   font-size: 3rem;
   margin-bottom: 18px;
@@ -359,7 +355,7 @@ height: 50px;
   margin-bottom: 12px;
 }
 
-/* TAG FIX */
+/* TAGS */
 .about-tags {
   margin-top: 20px;
   display: flex;
@@ -382,13 +378,7 @@ height: 50px;
 }
 
 
-/* -------------- TABLET FIX -------------- */
-
 @media (max-width: 900px) {
-  #about {
-    padding: 60px 6%;
-  }
-
   .about-container {
     flex-direction: column;
     text-align: center;
@@ -396,7 +386,7 @@ height: 50px;
   }
 
   .about-img img {
-    width: 220px;
+    width: 230px;
   }
 
   .about-content h1 {
@@ -416,31 +406,26 @@ height: 50px;
   }
 }
 
-
-/* -------------- MOBILE FIX -------------- */
-
+/* ---------------- MOBILE ---------------- */
 @media (max-width: 600px) {
   #about {
     padding: 40px 5%;
   }
 
   .about-img img {
-    width: 150px;
+    width: 160px;
   }
 
   .about-content h1 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
+    font-size: 2.8rem;
   }
 
   .about-content .intro {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 3rem;
   }
 
   .about-content .details {
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 2rem;
   }
 
   .about-tags span {
@@ -448,8 +433,6 @@ height: 50px;
     font-size: 0.8rem;
   }
 }
-
-/* ---------------- ABOUT SECTION FIX END ---------------- */
 
 
 

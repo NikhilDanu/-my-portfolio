@@ -18,7 +18,7 @@
   />
 </head>
 <body>
-  <div>
+  <div id="main">
     <header class="page1">
       <nav class="nav">
         <h1>PROT<span style="color: orangered;">FOLIO</span></h1>
@@ -233,18 +233,27 @@
       </div>
 
 
-      <form class="contact-form" action="#" method="POST">
-        <div class="input-box">
-          <input type="text" name="name" placeholder="Your Name" required />
-        </div>
-        <div class="input-box">
-          <input type="email" name="email" placeholder="Your Email" required />
-        </div>
-        <div class="input-box">
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+   <form class="contact-form" action="https://formsubmit.co/nikhildanu713@email.com" method="POST">
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <div class="input-box">
+    <input type="text" name="name" placeholder="Your Name" required />
+  </div>
+
+  <div class="input-box">
+    <input type="email" name="email" placeholder="Your Email" required />
+  </div>
+
+  <div class="input-box">
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  </div>
+
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
+
+
     </div>
   </div>
 </section>
