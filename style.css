@@ -418,9 +418,6 @@ body {
   }
 }
 
-/* =====================================================
-   PROJECTS TIMELINE
-===================================================== */
 
 #projects {
   padding: 80px 0;
@@ -439,6 +436,7 @@ body {
 
 .timeline {
   max-width: 1200px;
+  
   margin: auto;
   position: relative;
   padding: 0 20px;
@@ -520,7 +518,6 @@ body {
   line-height: 1.6;
 }
 
-/* ---------------- TIMELINE MOBILE (SINGLE COLUMN) ---------------- */
 @media (max-width: 768px) {
 
   #projects h1 {
@@ -553,9 +550,6 @@ body {
   .content p  { font-size: 0.9rem; }
 }
 
-/* =====================================================
-   SKILLS
-===================================================== */
 
 #skills {
   padding: 80px 0;
@@ -608,7 +602,6 @@ body {
   opacity: 0.8;
 }
 
-/* ---------------- SKILLS MOBILE ---------------- */
 @media (max-width: 768px) {
   #skills h1 {
     font-size: 2rem;
@@ -630,9 +623,7 @@ body {
   }
 }
 
-/* =====================================================
-   CONTACT
-===================================================== */
+
 
 #contact {
   padding: 80px 8%;
